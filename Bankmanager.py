@@ -146,6 +146,8 @@ if __name__ == "__main__":
     
     UserManager.create_user_account("Harsh Singh", "123", 500000.00)
     UserManager.create_user_account("Shraddha kapoor", "pass", 12000000.50)
+    UserManager.create_user_account("Amitabh Bachchan", "bigb", 7500000.75)
+    UserManager.create_user_account("Deepika Padukone", "dp", 3000000.00)
     print("\n")
     
     while True:
