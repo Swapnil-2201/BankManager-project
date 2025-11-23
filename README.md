@@ -1,43 +1,42 @@
 # BankManager-project
 
-This repository contains a foundational console-based application designed for basic bank account management, developed using Python and Object-Oriented Programming (OOP) principles.
+This repository includes a fundamental console-based application created with Python and Object-Oriented Programming (OOP) concepts for simple bank account management.
 
-## I. Project Overview and Features
+## I. Overview and Features of the Project
 
-The system facilitates the core operations required for a simple banking environment, including user account creation, secure login, and financial transaction processing.
+The system makes it easier to perform the fundamental tasks needed for a basic banking environment, such as creating user accounts, securely logging in, and processing financial transactions.
 
-### Key Features:
+### Important Features:
 
-* **Object-Oriented Design:** The architecture utilizes dedicated `BankAccount` and `UserManager` classes to ensure modularity and separation of concerns.
-* **Account Administration:** Supports the creation of new user accounts, each assigned a unique 10-digit account identifier.
-* **User Authentication:** Implements basic login functionality with user ID and password verification.
-* **Transaction Processing:** Features robust methods for `deposit` and `withdraw` operations, including validation checks for positive amounts and sufficient account funds.
-* **Financial Logic:** Incorporates a class-level interest rate mechanism that can be applied to account balances.
-* **Interface:** A structured, menu-driven command-line interface guides the user through available operations.
+* **Object-Oriented Design:** To guarantee modularity and concern separation, the architecture makes use of specialized `BankAcc` and `userManager` classes.
+* **User-Accounts:** Facilitates the establishment of new user accounts, each of which is given a distinct 10-digit account number.
+* **User Authentication:** Uses user ID and password verification to implement basic login functionality.
+* **Transaction Processing:** Incorporates a class-level interest rate mechanism that can be applied to account balances.
+* **Financial Logic:** Includes robust methods for `deposit` and `withdraw` operations, including validation checks for positive amounts and sufficient account funds.
+* **Interface:** The user is guided through the available operations by a menu-driven, structured command-line interface.
 
 ## II. Technical Requirements
 
 * **Programming Language:** Python 3.x or higher
 * **Compiler:** Any python compiler
 
-## III. Execution Guide
+## III. Execution Instructions
 
-1.  **File Setup:** Save the provided Python source code as `Bankmanager.py`.
-2.  **System Execution:** Navigate to the file's directory within your terminal or command prompt and execute the following command:
+1. **File Setup:** Store the given Python source code under the name `Bankmanager.py`.
+2. System Installation: Enter the following command after navigating to the file's directory in your terminal or command prompt:
+
 
     ```bash
     python Bankmanager.py
     ```
 
-## IV. System Usage
+## IV. System Utilization
 
-Upon launch, the system initializes several accounts for testing purposes and presents the Main Login/Creation Menu.
+When the system launches, it displays the Main Login/Creation Menu and initializes multiple accounts for testing.
 
-* **Initial Test Accounts:**
-    * ID: `Harsh Singh`, Password: `123`
-    * ID: `Shraddha kapoor`, Password: `pass`
-* **Main Operations:** Users can choose to **Log In** to an existing account, **Create New Account** after reviewing the Terms & Conditions, or **Exit System**.
-* **Account Operations:** Once authenticated, users can view their balance, perform deposits, and execute withdrawals.
+* ** Initial Test Accounts:** * ID: `Harsh Singh`, Password: `123` * ID: `Shraddha Kapoor`, Password: `pass`
+* **Main Operations:** After reading the Terms & Conditions, users have the option to **Log In** to an existing account, **Create New Account**, or **Exit System**.
+* **Account Operations:** Users can examine their balance, make deposits, and make withdrawals after authenticating.
 
 ## V. Testing Instructions and Required Screenshots
 
@@ -54,10 +53,12 @@ To verify the correct functionality of the system, please perform the following 
 
 ## VI. Repository Structure
 
-* **Bankmanager.py**: The primary Python source code file containing all class definitions (BankAccount, UserManager) and the main program logic.
+* **Bankmanager.py**: The primary Python source code file containing all class definitions (BankAcc, userManager) and the main program logic.
 * **README.md**: The main documentation file, providing an overview of the project, features, and instructions for setup and running the system.
 * **statement.md**: The design and architectural statement detailing the OOP structure, class responsibilities, and key design decisions.
 
-<img width="1020" height="968" alt="image" src="https://github.com/user-attachments/assets/e9cf6d48-4e2b-4438-b4b5-c9175b0c7a98" />
-<img width="828" height="804" alt="image" src="https://github.com/user-attachments/assets/cb0c1931-0fee-48f3-9d0d-f6b0cd02053d" />
+<img width="1062" height="748" alt="image" src="https://github.com/user-attachments/assets/bbe0f5c3-07f4-48a6-a0c7-8e00c97b0174" />
+
+<img width="736" height="839" alt="image" src="https://github.com/user-attachments/assets/c39b9218-1fc7-4884-9535-e7fce13133f1" />
+
 
