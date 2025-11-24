@@ -39,20 +39,8 @@ The system starts by immediately displaying the Main Login/Creation Menu. It aut
 * **Main Menu Options:** From the main screen, you can **Log In** to an existing account, **Create New Account** (after accepting the T&C), or **Exit System**.
 * **Account Actions:** Once logged in, you can check your balance, and initiate deposits and withdrawals.
 
-## ✅ V. Required Testing & Validation
 
-To ensure everything works correctly, please perform these tests and capture a screenshot for each required step.
-
-| Test Case | Steps to Perform | Expected Outcome | Screenshot Required |
-| :--- | :--- | :--- | :--- |
-| **T1: Account Creation** | 1. Select **2 (Create New Account)**. 2. Accept T&C. 3. Enter credentials and an initial deposit (e.g., $1000). | Confirmed creation message showing the new user ID and the unique 10-digit Account Number. | **Yes** (Proof of successful creation) |
-| **T2: Successful Login** | 1. Select **1 (Log In)**. 2. Use a predefined account (e.g., ID: `Harsh Singh`, Pass: `123`). | The system confirms login and immediately shows the **User Actions Menu** and **Account Statistics**. | **Yes** (Proof of accessing the account menu) |
-| **T3: Funds Deposit** | 1. Log in (T2). 2. Select **1 (Deposit)**. 3. Enter a positive amount (e.g., 500.00). | System confirms the deposit; the **Current Balance** in the statistics updates correctly. | **Yes** (Proof of updated balance) |
-| **T4: Successful Withdrawal** | 1. Stay logged in (T3). 2. Select **2 (Withdraw)**. 3. Enter an amount **lower than** the current balance. | System confirms "Withdrawal successful," and the **Current Balance** is reduced. | **Yes** (Proof of reduced balance) |
-| **T5: Insufficient Funds Check** | 1. Stay logged in (T4). 2. Select **2 (Withdraw)**. 3. Enter an amount **higher than** the current balance. | The error message "Insufficient funds! Withdrawal cancelled." appears. | **Yes** (Proof of the error message) |
-| **T6: Logout and Exit** | 1. Logged in: Select **3 (Log Out)**. 2. Main Menu: Select **4 (Exit System)**. | Session ends, returning to the Main Menu, and the program terminates cleanly. | **No** |
-
-## 📂 VI. Repository Contents
+## 📂 V. Repository Contents
 
 * **`Bankmanager.py`**: The core Python code with all class definitions (`BankAcc`, `userManager`) and execution logic.
 * **`README.md`**: This file, serving as the main project documentation, instructions, and feature guide.
