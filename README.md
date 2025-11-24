@@ -1,61 +1,62 @@
-# BankManager-project
+# BANK-MANAGER-Python Program
 
-This repository includes a fundamental console-based application created with Python and Object-Oriented Programming (OOP) concepts for simple bank account management.
+This repository holds a straightforward, console-based application built with **Python** to manage basic bank accounts. We used Object-Oriented Programming (OOP) to keep things clean and modular.
 
-## I. Overview and Features of the Project
+## 🚀 I. Project Overview & Core Features
 
-The system makes it easier to perform the fundamental tasks needed for a basic banking environment, such as creating user accounts, securely logging in, and processing financial transactions.
+This project simplifies the core functions of a basic bank. You can set up new accounts, log in securely, and handle your deposits and withdrawals right from your terminal.
 
-### Important Features:
+### What's Inside:
 
-* **Object-Oriented Design:** To guarantee modularity and concern separation, the architecture makes use of specialized `BankAcc` and `userManager` classes.
-* **User-Accounts:** Facilitates the establishment of new user accounts, each of which is given a distinct 10-digit account number.
-* **User Authentication:** Uses user ID and password verification to implement basic login functionality.
-* **Transaction Processing:** Incorporates a class-level interest rate mechanism that can be applied to account balances.
-* **Financial Logic:** Includes robust methods for `deposit` and `withdraw` operations, including validation checks for positive amounts and sufficient account funds.
-* **Interface:** The user is guided through the available operations by a menu-driven, structured command-line interface.
+* **Clean OOP Structure:** The application uses two main components, `BankAcc` and `userManager`, to cleanly separate banking logic from account management.
+* **Unique Accounts:** Easily create new user accounts; each one gets its own unique, 10-digit account number.
+* **Simple Authentication:** Implements a basic login system using a user ID and password.
+* **Transaction Logic:** Includes robust methods for **depositing** and **withdrawing** funds, with built-in checks to prevent negative amounts and insufficient funds.
+* **Interest Rate:** A class-level interest rate can be applied to balances.
+* **Menu-Driven Interface:** The application is easy to use thanks to a structured command-line menu that guides the user through all available actions.
 
-## II. Technical Requirements
+## 🛠️ II. Technical Setup
 
-* **Programming Language:** Python 3.x or higher
-* **Compiler:** Any python compiler
+* **Language:** Python 3.x or a newer version.
+* **Dependencies:** None—just a standard Python compiler.
 
-## III. Execution Instructions
+## ▶️ III. Execution Instructions
 
-1. **File Setup:** Store the given Python source code under the name `Bankmanager.py`.
-2. System Installation: Enter the following command after navigating to the file's directory in your terminal or command prompt:
-
+1.  **File Naming:** Ensure the Python source code file is saved as **`Bankmanager.py`**.
+2.  **Run the System:** Navigate to the file's directory in your terminal and run the following command:
 
     ```bash
     python Bankmanager.py
     ```
 
-## IV. System Utilization
+## 💻 IV. How to Use the System
 
-When the system launches, it displays the Main Login/Creation Menu and initializes multiple accounts for testing.
+The system starts by immediately displaying the Main Login/Creation Menu. It automatically sets up a few accounts for testing purposes.
 
-* ** Initial Test Accounts:** * ID: `Harsh Singh`, Password: `123` * ID: `Shraddha Kapoor`, Password: `pass`
-* **Main Operations:** After reading the Terms & Conditions, users have the option to **Log In** to an existing account, **Create New Account**, or **Exit System**.
-* **Account Operations:** Users can examine their balance, make deposits, and make withdrawals after authenticating.
+* **Pre-set Test Accounts:**
+    * ID: `Harsh Singh`, Password: `123`
+    * ID: `Shraddha Kapoor`, Password: `pass`
+* **Main Menu Options:** From the main screen, you can **Log In** to an existing account, **Create New Account** (after accepting the T&C), or **Exit System**.
+* **Account Actions:** Once logged in, you can check your balance, and initiate deposits and withdrawals.
 
-## V. Testing Instructions and Required Screenshots
+## ✅ V. Required Testing & Validation
 
-To verify the correct functionality of the system, please perform the following tests. A screenshot must be captured after the successful completion of each test case.
+To ensure everything works correctly, please perform these tests and capture a screenshot for each required step.
 
 | Test Case | Steps to Perform | Expected Outcome | Screenshot Required |
 | :--- | :--- | :--- | :--- |
-| **T1: Account Creation** | 1. Choose option **2 (Create New Account)**. 2. Accept T&C. 3. Enter a new ID, Password, and Initial Deposit (e.g., $1000). | System confirms the new user is created and displays the new 10-digit Account Number. | **Yes** (Showing successful creation) |
-| **T2: Successful Login** | 1. Choose option **1 (Log In)**. 2. Use a predefined account (e.g., ID: `Harsh Singh`, Pass: `123`). | Login successful message, followed by the **User Actions Menu** and **Account Statistics**. | **Yes** (Showing logged-in menu) |
-| **T3: Funds Deposit** | 1. Log in to an account (T2). 2. Select option **1 (Deposit)**. 3. Enter a positive amount (e.g., 500.00). | System confirms successful deposit, and the **Current Balance** in the Account Statistics is updated. | **Yes** (Showing updated balance) |
-| **T4: Successful Withdrawal** | 1. Stay logged in (T3). 2. Select option **2 (Withdraw)**. 3. Enter an amount **less than** the current balance. | System confirms "Withdrawal successful," and the **Current Balance** is reduced accordingly. | **Yes** (Showing reduced balance) |
-| **T5: Insufficient Funds Check** | 1. Stay logged in (T4). 2. Select option **2 (Withdraw)**. 3. Enter an amount **greater than** the current balance. | System prints the error message: "Insufficient funds! Withdrawal cancelled." | **Yes** (Showing the error message) |
-| **T6: Logout and Exit** | 1. Logged in: Select option **3 (Log Out)**. 2. Main Menu: Select option **4 (Exit System)**. | The session returns to the Main Menu, and then the system shuts down, respectively. | **No** (Verification of system closure is sufficient) |
+| **T1: Account Creation** | 1. Select **2 (Create New Account)**. 2. Accept T&C. 3. Enter credentials and an initial deposit (e.g., $1000). | Confirmed creation message showing the new user ID and the unique 10-digit Account Number. | **Yes** (Proof of successful creation) |
+| **T2: Successful Login** | 1. Select **1 (Log In)**. 2. Use a predefined account (e.g., ID: `Harsh Singh`, Pass: `123`). | The system confirms login and immediately shows the **User Actions Menu** and **Account Statistics**. | **Yes** (Proof of accessing the account menu) |
+| **T3: Funds Deposit** | 1. Log in (T2). 2. Select **1 (Deposit)**. 3. Enter a positive amount (e.g., 500.00). | System confirms the deposit; the **Current Balance** in the statistics updates correctly. | **Yes** (Proof of updated balance) |
+| **T4: Successful Withdrawal** | 1. Stay logged in (T3). 2. Select **2 (Withdraw)**. 3. Enter an amount **lower than** the current balance. | System confirms "Withdrawal successful," and the **Current Balance** is reduced. | **Yes** (Proof of reduced balance) |
+| **T5: Insufficient Funds Check** | 1. Stay logged in (T4). 2. Select **2 (Withdraw)**. 3. Enter an amount **higher than** the current balance. | The error message "Insufficient funds! Withdrawal cancelled." appears. | **Yes** (Proof of the error message) |
+| **T6: Logout and Exit** | 1. Logged in: Select **3 (Log Out)**. 2. Main Menu: Select **4 (Exit System)**. | Session ends, returning to the Main Menu, and the program terminates cleanly. | **No** |
 
-## VI. Repository Structure
+## 📂 VI. Repository Contents
 
-* **Bankmanager.py**: The primary Python source code file containing all class definitions (BankAcc, userManager) and the main program logic.
-* **README.md**: The main documentation file, providing an overview of the project, features, and instructions for setup and running the system.
-* **statement.md**: The design and architectural statement detailing the OOP structure, class responsibilities, and key design decisions.
+* **`Bankmanager.py`**: The core Python code with all class definitions (`BankAcc`, `userManager`) and execution logic.
+* **`README.md`**: This file, serving as the main project documentation, instructions, and feature guide.
+* **`statement.md`**: Detailed design document outlining the OOP architecture and key structural decisions.
 
 <img width="1062" height="748" alt="image" src="https://github.com/user-attachments/assets/bbe0f5c3-07f4-48a6-a0c7-8e00c97b0174" />
 
